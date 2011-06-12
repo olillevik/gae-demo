@@ -41,8 +41,8 @@ public class AppEngineDemoServlet extends HttpServlet {
 					.append("<tr>");
 			for (Entry entry : getAllEntries()) {
 				writer.append("<tr>")//
-						.append("<td>id:")//
-						.append(String.valueOf(entry.getId()))//
+						.append("<td>")//
+						.append(entry.getFormattedDate("yyyy-MM-dd HH:mm:ss"))//
 						.append("</td><td>")//
 						.append(entry.getText())//
 						.append("</td>")//
